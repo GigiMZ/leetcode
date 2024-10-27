@@ -79,3 +79,11 @@ def intersect(nums1: list[int], nums2: list[int]) -> list[int]:
         if nums2.__contains__(num):
             ls.append(num)
     return ls
+
+
+def isAnagram(s: str, t: str) -> bool:
+    s = sorted(s)
+    t = sorted(t)
+    if s == t:
+        return True
+    return False
